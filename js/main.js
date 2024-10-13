@@ -3,7 +3,7 @@ const $ = (x) => document.querySelector(x)
 function configureTopbar() {
   const $logo = $('#logo')
   $logo.addEventListener('click', () => {
-    window.location.href = '/'
+    window.location.href = ''
   })
 }
 
@@ -27,22 +27,6 @@ function configureFeedbackModal() {
     }
   }
 
-  $('#feedbackForm').onsubmit = async (e) => {
-    e.preventDefault()
-    let feedback = $text.value
-    $text.value = ''
-    $modal.style.display = 'none'
-    // send feedback to backend
-    await fetch('/feedback', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        feedback,
-      }),
-    })
-  }
 }
 
 configureTopbar()

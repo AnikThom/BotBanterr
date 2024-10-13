@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Ajnabee</title>
+  <title>Bot Banter</title>
   <link rel="icon" href="img/favicon.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,6 @@
 
 <body>
   <div id="main">
-    <!-- top bar -->
     <div id="top-bar">
       <div id="logo">
         <img width=20px src="/assets/logo.svg" alt="Ajnabee">
@@ -38,12 +37,17 @@
     <!-- video container -->
     <div id="videos">
       <div id="peer">
+
+
         <video class="video-player mirror" id="video-peer" autoplay playsinline></video>
         <div id="peer-video-loader"></div>
         <img src="/assets/logo.svg" alt="ajnabee" id="watermark">
       </div>
       <div id="self">
-        <video class="video-player mirror" id="video-self" autoplay playsinline muted="muted"></video>
+        <video class="video-player mirror" id="video-self" autoplay playsinline muted="muted">
+
+            
+        </video>
       </div>
     </div>
 
@@ -62,19 +66,6 @@
     </div>
   </div>
 
-  <!-- feedback popup -->
-  <div id="feedbackModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Provide Feedback</h2>
-      <form id="feedbackForm">
-        <textarea id="feedbackText" rows="10" placeholder="Your feedback..." required></textarea>
-        <input type="submit" class="button" id="submit-btn" value="Submit" />
-      </form>
-    </div>
-  </div>
-
-  <script defer src="./js/main.js"></script>
   <script defer src="./js/video.js" type="module"></script>
 </body>
 

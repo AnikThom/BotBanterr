@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Bot Banter</title>
+    <link rel="icon" href="images/chatbot-icon.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="App.css" rel="stylesheet" />
+    <link href="css/phone.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="favicon/msapplication-TileColor" content="#da532c">
+    <meta name="favicon/theme-color" content="#333333">
+
+  </head>
+  <body>
+
+    
+    <div id="main">
+      <div id="top-bar">
+        <div id="logo">
+          <img width=20px src="images/chatbot-icon.svg" alt="BotBanter">
+        </div>
+      </div>
+  
+      <!-- video container -->
+      <div id="videos">
+        <div id="peer">
+  
+          <video class="video-player mirror" id="video-peer" autoplay playsinline></video>
+          <div id="peer-video-loader"></div>
+          <img src="images/chatbot-icon.svg" alt="BotBanter" id="watermark" style="width:50px;">
+        </div>
+        <div class= "self mirror" id="root">
+          <video class="video-player" id="video-self" autoplay playsinline muted="muted">
+              
+          </video>
+        </div>
+      </div>
+  
+      <!-- message area -->
+      <div id="message-area">
+        <div id="messages"></div>
+        <div id="typing" style="display: none" class="message">Stranger is typing...</div>
+      </div>
+  
+  
+      <!-- input area -->
+      <div id="input-area">
+        <button class="button" id="skip-btn">Skip<span>Esc</span></button>
+        <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off" />
+        <button class="button" id="send-btn">Send<span>Enter</span></button>
+      </div>
+    </div>
+  
+    <script defer src="video.js" type="module"></script>
+
+  </body>
+</html>

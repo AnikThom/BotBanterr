@@ -1,3 +1,49 @@
+.App {
+  text-align: center;
+  height: 325px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(45deg, #69ebca, #7a42af);
+}
+
+.camera-feed {
+  margin: 16px;
+  opacity: 0;
+  width: 0px;
+  height: 800px;
+
+}
+
+.logo {
+  position: absolute;
+  width: 128px;
+  bottom: 16px;
+  left: 16px;
+}
+
+
+.dropzone {
+  margin: 16px;
+  margin-bottom: 0px;
+  border-radius: 16px;
+  padding: 0 16px;
+  width: 436px;
+  height: 32px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #412854;
@@ -49,12 +95,12 @@ p {
   justify-content: space-between;
   padding: 10px 30px;
   border: solid 1px;
-  border-color: #090522;
+  border-color: #56263c;
   align-items: center;
-  background-color: #120a3d;
-  box-shadow: 0 0.1em 0.3em #090522;
-  -moz-box-shadow: 0 0.1em 0.3em #090522;
-  -webkit-box-shadow: 0 0.1em 0.3em #090522;
+  background-color: #8d4867;
+  box-shadow: 0 0.1em 0.3em #56263c;
+  -moz-box-shadow: 0 0.1em 0.3em #56263c;
+  -webkit-box-shadow: 0 0.1em 0.3em #56263c;
 }
 #logo {
   height: 100%;
@@ -71,7 +117,7 @@ p {
   margin: 0px;
 }
 
-
+/* video container */
 #videos {
   grid-area: vid;
   margin: 10px;
@@ -81,11 +127,10 @@ p {
   overflow: hidden;
 }
 
-.self {
+#self {
   overflow: hidden;
   margin-top: 5px;
 }
-
 #peer {
   margin-bottom: 5px;
   overflow: hidden;
@@ -100,11 +145,12 @@ p {
   opacity: 0.7;
 }
 
-.video-player {
+.video-player{
   width: 100%;
   height: 100%;
   background-color: #666;
   object-fit: cover;
+  overflow: hidden;
 }
 
 #peer {

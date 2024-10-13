@@ -71,7 +71,7 @@ p {
   margin: 0px;
 }
 
-
+/* video container */
 #videos {
   grid-area: vid;
   margin: 10px;
@@ -81,11 +81,10 @@ p {
   overflow: hidden;
 }
 
-.self {
+#self {
   overflow: hidden;
   margin-top: 5px;
 }
-
 #peer {
   margin-bottom: 5px;
   overflow: hidden;
@@ -227,4 +226,22 @@ p {
 }
 #submit-btn {
   padding: 10px 20px;
+}
+
+
+.App {
+  text-align: center;
+  height: 768px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #69ebca, #7a42af);
 }
